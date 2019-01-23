@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frmMain" prefHeight="409.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Controller.MainView">
+   <children>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="20.0" prefHeight="29.0" prefWidth="242.0" text="POS " textFill="#061497" textOverrun="CLIP">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblmanagecustomer" alignment="CENTER" layoutX="39.0" layoutY="253.0" onMouseClicked="#gotomanagecustomer" prefHeight="29.0" prefWidth="143.0" text="Manage Customers" textOverrun="CLIP">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblmanageitems" alignment="CENTER" layoutX="193.0" layoutY="253.0" onMouseClicked="#gotomanageitems" prefHeight="29.0" prefWidth="127.0" text="Manage Items" textOverrun="CLIP">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="254.0" onMouseClicked="#PlaceinOrder" prefHeight="29.0" prefWidth="99.0" text="Place Order" textOverrun="CLIP">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblvieworder" alignment="CENTER" layoutX="457.0" layoutY="253.0" onMouseClicked="#vieworder" prefHeight="29.0" prefWidth="113.0" text="View Order" textOverrun="CLIP">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="btnsetting" alignment="CENTER" layoutX="473.0" layoutY="326.0" onMouseClicked="#gotosettings" prefHeight="29.0" prefWidth="113.0" text="Settings" textOverrun="CLIP">
+         <font>
+            <Font name="Bodoni MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="106.0" layoutX="210.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Combo_Chart_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="93.0" layoutX="473.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Edit_Property_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="343.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Sell_Stock_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="113.0" layoutX="59.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Administrator_Male_96px_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="243.0" layoutY="72.0" text="Point Of Sale System" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

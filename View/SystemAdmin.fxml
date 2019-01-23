@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="frmsystem" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Controller.SystemAdmin">
+   <children>
+      <Button fx:id="btnusercreate" layoutX="240.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#createnewuser" text="Create" />
+      <Label layoutX="120.0" layoutY="24.0" prefHeight="17.0" prefWidth="91.0" text="Old Password :" />
+      <TextField fx:id="txtsystemoldpassword" layoutX="226.0" layoutY="20.0" prefHeight="0.0" prefWidth="177.0" />
+      <TextField fx:id="txtsystemnewpassword" layoutX="226.0" layoutY="48.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="txtuserpassword" layoutX="240.0" layoutY="338.0" />
+      <TextField fx:id="txtusername" layoutX="240.0" layoutY="309.0" />
+      <TextField fx:id="txtsystemnewpasswordconfirm" layoutX="226.0" layoutY="78.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="txtadminusername" layoutX="240.0" layoutY="129.0" />
+      <Label layoutX="116.0" layoutY="52.0" prefHeight="17.0" prefWidth="98.0" text="New Password:" />
+      <Label layoutX="113.0" layoutY="82.0" prefHeight="17.0" prefWidth="105.0" text="Confirm Password :" />
+      <Label layoutX="20.0" layoutY="133.0" text="Admin" />
+      <Label layoutX="165.0" layoutY="164.0" prefHeight="17.0" prefWidth="69.0" text="Password :" />
+      <Label layoutX="165.0" layoutY="133.0" prefHeight="17.0" prefWidth="69.0" text="User Name :" />
+      <Button fx:id="btnnewuser" layoutX="391.0" layoutY="309.0" mnemonicParsing="false" onMouseClicked="#enableduser" text="New User" />
+      <Button fx:id="btnadmincreate" layoutX="405.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#createadmin" prefHeight="25.0" prefWidth="52.0" text="Create" />
+      <Button fx:id="btnnewadmin" layoutX="403.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#ebalededit" prefHeight="25.0" prefWidth="80.0" text="New Admin" />
+      <Button fx:id="btnsystempwordchange" layoutX="429.0" layoutY="78.0" mnemonicParsing="false" onMouseClicked="#updatesysuser" text="Change" />
+      <TextField fx:id="txtadminpassword" layoutX="240.0" layoutY="160.0" />
+      <Label layoutX="18.0" layoutY="8.0" text="System" />
+      <TableView fx:id="tbladminview" layoutX="107.0" layoutY="196.0" prefHeight="90.0" prefWidth="356.0">
+        <columns>
+          <TableColumn prefWidth="165.0" text="User Name" />
+          <TableColumn prefWidth="190.0" text="Password" />
+        </columns>
+      </TableView>
+      <Label layoutX="165.0" layoutY="341.0" prefHeight="17.0" prefWidth="69.0" text="Password :" />
+      <Label layoutX="165.0" layoutY="313.0" prefHeight="17.0" prefWidth="69.0" text="User Name :" />
+      <TableView fx:id="tblmainuserview" layoutX="129.0" layoutY="396.0" prefHeight="90.0" prefWidth="356.0">
+         <columns>
+            <TableColumn prefWidth="153.0" text="User Name" />
+            <TableColumn prefWidth="202.0" text="Password" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="-1.0" layoutY="296.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="20.0" layoutY="313.0" text="User" />
+      <Button fx:id="btnmainmenu" layoutX="490.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#gotomain" prefHeight="25.0" prefWidth="80.0" text="Main Menu" />
+      <Button fx:id="btnlogout" layoutX="506.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#Logout" prefHeight="25.0" prefWidth="80.0" text="Log Out" />
+      <Button fx:id="btnremove" layoutX="464.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#removeadmin" text="Remove" />
+      <Button fx:id="btndelete" layoutX="299.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#removeusers" text="Delete" />
+   </children>
+</AnchorPane>
